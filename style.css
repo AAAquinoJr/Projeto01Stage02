@@ -1,0 +1,94 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+
+}
+
+#hero {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 72px;
+  width: 592px;
+  margin: 0 auto 72px; /*se assim feito o 0 eh pra margem de cima,  auto eh para as laterais e o 72 eh pra baixo*/
+   /*funciona como um relogio cima direita baixo esqueda*/
+   /*  eh um shothand q ajuda a nao ter q ficar escrevendo eu faço daquele jeito ao invez de ficar escrevendo td isso
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+  */ 
+
+
+}
+
+#hero img {
+ margin-bottom: 72px;
+
+}
+
+
+h1 { /*h1 ja vem por padrao em negrito*/
+  margin-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal; /*coloca no normal pra tirar o negrito do h1*/
+  font-size: 49px; /*tamanho da fonte*/ 
+  line-height: 56px; /*altura da linha*/
+}
+
+/*soh quero q esse span seja em negrito*/
+h1 span { /*preciso q soh uma parte do meu h1 seja em negrito no caso a parte do span*/
+  font-weight: bold;
+
+}
+
+p , #footer {
+
+  color:#7D7987;
+  font-size: 14px;
+  line-height: 28px; /*espaçamento entre as linhas*/
+
+}
+
+/*#footer {
+ font-size: 14px;
+ line-height: 28px;
+} inves de escrever td isso eu adiciono nas especificaçoes no p, ja que a cor dos <a> nao vai mudar devido a maior especificidade*/
+
+
+a , span {
+  
+  font-family: 'Open Sans', sans-serif;
+  color:#FF9900;
+}
+
+/*span {
+  color:#FF9900;
+}igual o caso do #footer */
+
+/*esse +a fala como se fosse colocar a especificaçoes para a tag <a> q vem depois da outra <a> no caso a segunda tag <a> fale conosco*/
+ /*eh tipo coloque as instruçoes na tag <a> anterior a tag <a>.  Ele vai pegar tds as tag <a> que tenham uma tag <a> antes (no caso se tivesse 3 ele pegaria duas (a) (a) -a-)*/
+  #footer a + a {
+    margin-left: 28px;
+  }
+
+  #footer {
+    margin-bottom: 36px;
+  }
+
+
+#line {
+ width: 568px;
+ height: 0;
+ margin: 0 auto 8px;
+ border: 1px solid #ECEFF2;
+
+}
+
+
+#balls {
+
+position: fixed;
+bottom: 0px;
+right: 0px;
+}
+
